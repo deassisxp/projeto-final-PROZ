@@ -8,7 +8,7 @@ body {
     border: none;
 }
 section{
-    width: 100vw;
+    width: 100%;
     margin: 0;
     border: 0;
 }
@@ -40,6 +40,7 @@ section{
 .sobre{
     margin: 0;
     padding: 0;
+    width: 100%;
     border: none;
     height: 100vh;
     background-color: #D9D9D9;
@@ -72,7 +73,6 @@ section{
 #sobre_id{
     background-image: url('../img/Ellipse\ 9.png');
     background-repeat: no-repeat;
-    background-size: cover;
     background-size: 30vw;
     background-position: center;
     
@@ -80,14 +80,12 @@ section{
 #missao{
     background-image: url('../img/Ellipse\ 10.png');
     background-repeat: no-repeat;
-    background-size: cover;
     background-size: 30vw;
     background-position: center;
 }
 #gente{
     background-image: url('../img/Ellipse\ 11.png');
     background-repeat: no-repeat;
-    background-size: cover;
     background-size: 30vw;
     background-position: center;
 }
@@ -101,14 +99,19 @@ section{
 .depoimentos{
     margin: 0;
     padding: 0;
-    padding-top: 5vh;
+    width: 100%;
     padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: auto;
+    height: 100vh;
+}
+.depoimentos h1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5vh;
 }
 #depoimentos{
     display: flex;
@@ -145,4 +148,118 @@ section{
     padding: 0;
     color: black;
     width: 30vw;
+}
+.ocean{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url('../img/Rectangle\ 8.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;    
+    height: 100vh;
+    color: white;
+}
+.ocean h1{
+    font-size: 10vh;
+}
+.ocean p{
+    background-color: rgba(133, 133, 133, 0.7);
+    width: 100%;
+}
+.ocean button{
+    height: 6vh;
+    border-radius: 15%;
+    background-color: #11111F;
+    color: white;
+}
+.ocean button:active {
+    transform: scale(0.9);
+}
+.login{
+    background-image: url('../img/Rectangle\ 8\ \(2\).png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+}
+.login div{
+    width: 25%;
+    height: 60%;
+    background-color: rgba(217, 217, 217, 0.15);
+    backdrop-filter: blur(2px);
+    border-radius: 5%;
+
+}
+.login div form{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.login div form input, #lembrar, #registro{
+    width: 85%;
+    height: 4vh;
+    border-radius: 1vh;
+    margin: 1vh;
+    border: 1px;
+    border-color: #11111F;
+    color: white;
+    background: transparent;
+    border: 1px solid white; 
+}
+#lembrar, #registro{
+    display: flex;
+    backdrop-filter: none;
+    border: none;
+    padding-bottom: 5vh;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    
+
+}
+
+#manterConectado{
+    width: 5%;
+    margin-left: 50%;
+    margin: 1vh;
+}
+#login{
+    color: black;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+#registro{
+    font-size: 2vh;
+    flex-direction: row;
+    align-items: start;
+    text-align: center;
+    justify-content: center;
+    
+}
+#registro p, #registro a{
+    min-width: 30%;
+    margin: 0;
+    padding: 0;
+}
+#registro a{
+    color: #73D5E1;
 }

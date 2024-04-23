@@ -1,17 +1,21 @@
 #navbar {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #73D5E1;
-    padding: 2vh;
+    padding: 1vw;
     margin: 0;
     border: none;
-}    
+    width: 100vw;
+} 
 
 #navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-right: 3vw;
     overflow: hidden;
     display: flex;
 }
