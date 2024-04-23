@@ -22,19 +22,22 @@
             <li><a id="nav-inscricao" href="./inscricao.html">Inscrever</a></li>
         </ul>
     </div>
-    <div>
-        <h2>Formulário de Inscrição</h2>
-        <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="senha">Senha:</label><br>
-            <input type="password" id="senha" name="senha"><br>
-            <label for="senha">Digite a Senha Novamente:</label><br>
-            <input type="password" id="senha" name="senha"><br>
-            <input type="submit" value="Inscrever">
-        </form>
+    <div id="inscricao">
+        <div>
+            <h2>Formulário de Inscrição</h2>
+            <form>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+                <input type="email" id="email" name="email" placeholder="E-mail">
+                <input type="password" id="senha" name="senha" placeholder="Senha">
+                <input type="password" id="senha" name="senha" placeholder="Digite a Senha Novamente">
+                <input type="submit" value="Inscrever" style="background-color: #D9D9D9; color: black;">
+                <div id="logar">
+                    <p>Já tem uma conta?</p>
+                    <a href="./login.html">Fazer login!</a>
+                </div>
+            </form>
+        </div>
+        
     </div>
     
     
