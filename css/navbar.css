@@ -24,6 +24,10 @@
     float: left;
 }
 
+.logo-ocean{
+    width: 120px;
+}
+
 #navbar li a {
     display: block;
     color: white;
@@ -31,14 +35,15 @@
     padding: 14px 16px;
     text-decoration: none;
 }
-#nav-home{
+
+#navbar li a:hover{
     background-color: #3CC5D6;
+    transition: 0.2s;
+}
+#nav-home{
     border-radius: 5%;
 }
 #nav-inscricao{
     background-color: #11111F;
     border-radius: 5%;
-}
-#navbar img{
-    width: 6vh;
 }
