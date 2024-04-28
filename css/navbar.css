@@ -1,4 +1,78 @@
-#navbar {
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.nav-scroll-bg{
+    background: #3CC5D6;
+    transition: 0.1s;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    padding-left: 80px;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.items-nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding-right: 80px;
+}
+
+.items-nav li{
+    margin-right: 10px;
+}
+
+.items-nav li:last-child{
+    margin-right: 0;
+}
+
+.items-nav a{
+    text-decoration: none;
+    color: #FFF;
+    white-space: nowrap;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.items-nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0px;
+    height: 1px;
+    background-color: #FFF;
+    transition: width 0.2s ease-in-out;
+    transform-origin: bottom;
+}
+
+.items-nav a:hover::after{
+    width: 100%;
+}
+
+/* .items-nav a:hover{
+    background: #3CC5D6;
+    border-bottom: 1px solid #FFF;
+    width: 100%;
+    transition: 0.2s;
+} */
+
+/* #navbar {
     position: fixed;
     top: 0;
     display: flex;
@@ -46,4 +120,4 @@
 #nav-inscricao{
     background-color: #11111F;
     border-radius: 5%;
-}
+} */
