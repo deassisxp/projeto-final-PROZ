@@ -9,7 +9,7 @@ body {
 .container{
     width: 100%;
     display: flex;
-    justify-center: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
