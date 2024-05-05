@@ -1,6 +1,5 @@
-var nav = document.querySelector('.navbar');
+var nav = document.querySelector('nav');
 console.log(nav)
-
 
 window.addEventListener('scroll', function(){
     var scrollPosition = window.scrollY;
