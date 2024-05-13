@@ -347,6 +347,9 @@ body {
     background: transparent;
     border: 1px solid white; 
 }
+.campo-obrigatorio:invalid {
+    border-color: red;
+}
 #recursos{
     background: url('../img/Rectangle\ 8\ \(1\).png');
     background-repeat: no-repeat;
@@ -364,6 +367,7 @@ body {
     font-size: 2vw;
     color: white;
 }
+
 #noticias{
     min-height: 100vh;
     display: flex;
