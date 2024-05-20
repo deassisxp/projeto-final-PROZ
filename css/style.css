@@ -10,7 +10,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -110,85 +109,85 @@ body {
 
 /* Configurações CSS Depoimentos */
 .depoimentos{
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height:  70vh;
+}
+
+.titulo-dep{
+    display: flex;
     justify-content: center;
 }
 
-.depoimentos h1{
-    padding: 0;
-    margin: 0;
-    margin-bottom: 5vh;
-}
-#depoimentos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 90vw;
-    height: auto;
-}
-#depoimentos div{
-    padding: 0;
-    margin: 0;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    width: 30vw;
-    height: 40vh;
+.titulo-dep h1{
+    color: #000;
 }
 
-#depoimentos div div{
-    background-color: #E3E3E3;
-    padding: 0;
-    margin: 0;
-    height: 45vh;
-    width: 30vw;
+.sec-dep{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.dep{
+    background: #FFF;
+    padding: 30px;
+    border: 1px solid #D7D7D7;
+    border-radius: 20px;
     align-items: center;
     text-align: center;
     justify-content: center;
-    border-radius: 5%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
 }
-#depoimentos div h4,.paragrafo{
-    margin: 0;
-    padding: 0;
-    color: black;
-    width: 30vw;
-}
+
+/* Configurando CSS do Cadastre-se da tela principal*/
 .ocean{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-image: url('../img/Rectangle\ 8.png');
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: center;    
-    height: 100vh;
-    color: white;
-}
-.ocean h1{
-    font-size: 10vh;
-}
-.ocean p{
-    background-color: rgba(133, 133, 133, 0.7);
     width: 100%;
+    height: 70vh;
 }
-.ocean button{
-    height: 6vh;
-    border-radius: 15%;
-    background-color: #11111F;
+
+.ocean div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    background: url('../img/ocean_w_orca.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ocean h1{
+    font-size: 70px;
+}
+
+.ocean p{
+    background-color: rgba(133, 133, 133, 0.3);
+    color: #FFF;
+    width: 100%;
+    padding: 15px 0;
+}
+.ocean a{
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    white-space: nowrap;
     color: white;
 }
-.ocean button:active {
+
+.ocean a:active {
     transform: scale(0.9);
 }
 .login{
