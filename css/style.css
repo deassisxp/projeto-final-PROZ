@@ -257,20 +257,39 @@ body::-webkit-scrollbar {
     border: 3px solid #DBDBDB;  /* creates padding around scroll thumb */
   }
 
+/* Configurando tela de login */
 .login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
     background-image: url('../img/Rectangle\ 8\ \(2\).png');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     height: 100vh;
+
+    color: #FFF;
+}
+
+.text-login{
+    margin-bottom: 100px;
+}
+
+form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: white;
-
+    gap: 25px;
 }
-.login div, #inscricao div{
+
+.usuario-login, .senha-login{   
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background-color: transparent;
+    padding: 10px 0 10px 25px;
+}
+
+/* .login div, #inscricao div{
     width: 25%;
     height: 60%;
     background-color: rgba(217, 217, 217, 0.15);
@@ -297,7 +316,8 @@ body::-webkit-scrollbar {
     color: white;
     background: transparent;
     border: 1px solid white; 
-}
+} */
+
 #lembrar, #registro{
     display: flex;
     backdrop-filter: none;
