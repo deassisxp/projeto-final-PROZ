@@ -1,9 +1,14 @@
 footer{
-    display: flex;
-    justify-content: center;
     background-color: #D9D9D9;
-    height: 8vh;
+    height: 20vh;
 }
+
+@media (max-width: 999) {
+    footer{
+        height: auto;
+    }
+}
+
 footer p{
     position: absolute;
     text-align: center;
