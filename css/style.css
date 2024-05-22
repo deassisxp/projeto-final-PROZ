@@ -257,38 +257,6 @@ body::-webkit-scrollbar {
     border: 3px solid #DBDBDB;  /* creates padding around scroll thumb */
   }
 
-/* Configurando tela de login */
-.login{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    background-image: url('../img/Rectangle\ 8\ \(2\).png');
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    height: 100vh;
-
-    color: #FFF;
-}
-
-.text-login{
-    margin-bottom: 100px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.usuario-login, .senha-login{   
-    border: none;
-    border-bottom: 1px solid #FFF;
-    background-color: transparent;
-    padding: 10px 0 10px 25px;
-}
-
 /* .login div, #inscricao div{
     width: 25%;
     height: 60%;
@@ -341,7 +309,7 @@ form{
     width: 70%;
     background-color: #D9D9D9;
     display: block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 #registro{
     font-size: 2vh;
