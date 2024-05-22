@@ -1,7 +1,7 @@
 var buttonMenu = document.querySelector('.menu-mobile');
 var menu = document.querySelector('.items-nav');
 
-buttonMenu.addEventListener("click", () => {
+buttonMenu.addEventListener('click', () => {
     if(menu.classList.contains('active')){
         menu.classList.remove('active');
     }else{

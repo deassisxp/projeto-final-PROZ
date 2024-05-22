@@ -7,34 +7,75 @@
     <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
 </head>
-<body>
-    <section class="login-container">
-        <div class="text-login">
-            <h1>Login</h1>
-        </div>
+<body">
+    <div class="login-container">
         <div class="login">
             <div class="conteudo-login">
-                <p>Conteudo para tela de login</p>
+                <div class="espaco">
+                    <h1>Ocean</h1>
+                    <h1>Bliss</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
                 <div class="overlay"></div>
             </div>
             <form>
-                <label for="">Usuário</label>
-                <input type="text" id="usuario" name="usuario" placeholder="@GMAIL.COM" class="campo-obrigatorio usuario-login">
-                <label for="">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="SENHA" class="campo-obrigatorio senha-login">
-                <div id="lembrar" style="margin: 0;">
-                    <input type="checkbox" id="manterConectado" name="manterConectado">
-                    <label for="manterConectado">Lembrar</label>
-                </div>                
-                <input type="submit" value="Login" id="login">
-                <div id="registro">
-                    <p>Ainda não tem uma conta?</p>
-                    <a href="./inscricao.html">Registre-se!</a>
+                <div class="login-or-register">
+                    <a class="btn-login">
+                        <h1>Login</h1>
+                    </a>
+                    <a class="btn-register">
+                        <h1>Cadastre-se</h1>
+                    </a>
+                </div>
+                <div class="formulario">
+                    <section id="formulario-login" class="formulario-login">
+                        <label for="usuario">
+                            <small>Usuário</small>
+                        </label>
+                        <input type="text" id="usuario" name="usuario" placeholder="@gmail.com" class="campo-obrigatorio usuario-login">
+                        <label for="senha">
+                            <small>Senha</small>
+                        </label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" class="campo-obrigatorio senha-login">
+                        <div id="lembrar" class="lembrar-senha">
+                            <div class="lembrar-acesso">
+                                <input type="checkbox" id="manterConectado" name="manterConectado">
+                                <label for="manterConectado">Lembrar</label>
+                            </div>
+                            <a href="" class="esqueceu-senha">
+                                <small>Esqueceu a senha?</small>
+                            </a>
+                        </div>      
+                        <input type="submit" value="Login" id="login" class="btn-acesso">          
+                    </section>
+                    <section id="formulario-registro" class="formulario-registro">     
+                        <section id="formulario-login" class="formulario-login">
+                            <label for="nome">
+                                <small>Nome Completo</small>
+                            </label>
+                            <input type="text" id="email" name="nome" placeholder="Guilherme Souza dos Santos" class="campo-obrigatorio usuario-login">
+                            <label for="email">
+                                <small>E-mail</small>
+                            </label>
+                            <input type="email" id="confirmarEmail" name="email" placeholder="@exemplo.com" class="campo-obrigatorio senha-login">
+                            <label for="email">
+                                <small>Confirmar E-mail</small>
+                            </label>
+                            <input type="email" id="senha" name="email" placeholder="@exemplo.com" class="campo-obrigatorio senha-login">
+                            <label for="Senha">
+                                <small>Senha</small>
+                            </label>
+                            <input type="password" id="senha" name="Senha" placeholder="Digite uma senha forte" class="campo-obrigatorio senha-login">
+                            <label for="Senha">
+                                <small>Confirmar Senha</small>
+                            </label>
+                            <input type="password" id="senha" name="Senha" placeholder="Repita a senha" class="campo-obrigatorio senha-login">
+                            <input type="submit" value="Cadastre-se" id="login" class="btn-cadastro"> 
+                    </section>
                 </div>
             </form>
         </div>
-    </section>
-    <script src="../js/navbar.js"></script>
-    <script src="../js/validacao.js"></script>
+    </div>
+    <script src="../js/inscricao.js"></script>
 </body>
 </html>

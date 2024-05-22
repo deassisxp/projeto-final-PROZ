@@ -8,10 +8,15 @@ body {
 
 /* Configurando tela de login */
 .login-container{
-    background-image: url('../img/Rectangle\ 8\ \(2\).png');
+    background-image: url('../img/background-login.jpg');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-login{
@@ -21,6 +26,7 @@ body {
     text-align: center;
     height: 100px;
     margin-bottom: 100px;
+    color: #FFF;
 }
 
 .text-login h1{
@@ -34,6 +40,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 700px;
+    height: 500px;
 }
 
 .conteudo-login{
@@ -41,21 +49,36 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    width: 500px;    
-    height: 500px;
+    width: 100%;
+    height: 100%;
 
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     position: relative;
     color: #FFF;
+}
+
+.conteudo-login h1{
+    font-size: 3rem;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.conteudo-login h1:last-of-type{
+    font-size: 6rem;
 }
 
 .conteudo-login p{
     z-index: 1;
     position: relative;
+}
+
+.espaco{
+    padding: 30px;
 }
 
 .overlay{
@@ -74,19 +97,119 @@ form{
     display: flex;
     flex-direction: column;
     background-color: #FFF;
-    width: 500px;    
-    height: 500px;
+
+    width: 100%;
+    height: 100%;
     gap: 25px;
 
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
 }
 
+.login-or-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-or-register a{
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-login:hover{
+    background-color: #c1c1c1;
+    color: #FFF;
+}
+
+.btn-register{
+    border-top-right-radius: 40px;
+}
+
+.btn-register:hover{
+    background-color: #dedede;
+    color: #FFF;
+}
+
+.formulario{
+    height: 100%;
+}
+
+.formulario-login, .formulario-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100%;
+}
+
+label{
+    font-weight: bold;
+}
+
 .usuario-login, .senha-login{   
     border: none;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #000;
     background-color: transparent;
+    width: 100%;
     padding: 10px 0 10px 25px;
+}
+
+.lembrar-senha{
+    display: flex;
+    justify-content: space-around;
+}
+
+.esqueceu-senha{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.esqueceu-senha:hover{
+    border-bottom: 1px solid #000;
+}
+
+.btn-acesso{
+    width: 100%;
+    padding: 20px;
+    margin: 35px 0;
+    border: none;
+    background-color: #3CC5D6;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-acesso:hover{
+    background-color: #34abbb;   
+}
+
+.formulario-registro{
+    border: none;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    transition: 0.3s;
+    padding: 0 !important;
+}
+
+/* Configurando seção de Registro */
+.btn-cadastro{
+    width: 100%;
+    padding: 20px;
+    margin: 35px 0;
+    border: none;
+    background-color: #d63c3c;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 /* Configurando Placeholder dos inputs da tela de login */
@@ -104,4 +227,13 @@ form{
  
  :-ms-input-placeholder {  
     color: rgb(139, 139, 139);  
+ }
+
+ /* Esconder seção login e registro */
+ .visible{
+    display: flex;
+ }
+
+ .hide{
+    display: none;
  }
