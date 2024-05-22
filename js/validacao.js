@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!campo.value.trim()) {
                 campo.style.borderColor = 'red';
                 formValido = false;
+                if (!formValido) {
+                    event.preventDefault();
+                }
             } else {
                 campo.style.borderColor = '';
             }
         });
 
-        // Validação de email
         var email = document.getElementById('email');
         if (!validarEmail(email.value)) {
             email.style.borderColor = 'red';
@@ -22,21 +24,20 @@ document.addEventListener('DOMContentLoaded', function() {
             email.style.borderColor = '';
         }
 
-        // Validação de senhas iguais
         var senha = document.getElementById('senha');
         var confirmarSenha = document.getElementById('confirmarSenha');
         if (senha.value !== confirmarSenha.value) {
             senha.style.borderColor = 'red';
             confirmarSenha.style.borderColor = 'red';
             formValido = false;
+            if (!formValido) {
+                event.preventDefault();
+            }
         } else {
             senha.style.borderColor = '';
             confirmarSenha.style.borderColor = '';
         }
 
-        if (!formValido) {
-            event.preventDefault();
-        }
     });
 });
 
