@@ -245,17 +245,17 @@ body {
 /* Editando scroll bar */
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: #DBDBDB;        /* color of the tracking area */
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: #3CC5D6;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid #DBDBDB;  /* creates padding around scroll thumb */
-  }
+}
 
 #lembrar, #registro{
     display: flex;
