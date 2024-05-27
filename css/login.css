@@ -165,19 +165,15 @@ form{
     height: 100%;
 }
 
-label{
-    font-weight: bold;
+.span-required{
+    display: none;
+    color: red;
 }
 
 .usuario-login, .senha-login{   
     border: none;
-    border-bottom: 1px solid #000;
-    background-color: transparent;
+    background-color: rgb(232, 232, 232);
     padding: 10px 0 10px 25px;
-}
-
-.senha-login{
-    margin-top: 15px;
 }
 
 .lembrar-senha{
@@ -216,8 +212,16 @@ label{
     text-decoration: none;
     color: #000;
     height: 100%;
-    gap: 15px;
     transition: 0.3s;
+}
+
+.formulario-registro div{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-registro label{
+    font-weight: bold;
 }
 
 .scroll{

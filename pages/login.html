@@ -18,7 +18,7 @@
                 </div>
                 <div class="overlay"></div>
             </div>
-            <form>
+            <form id="form">
                 <div class="login-or-register">
                     <a class="btn-login">
                         <h1>Login</h1>
@@ -29,14 +29,8 @@
                 </div>
                 <div class="formulario">
                     <section id="formulario-login" class="formulario-login">
-                        <label for="usuario">
-                            <small>Usuário</small>
-                        </label>
-                        <input type="text" id="usuario" name="usuario" placeholder="@gmail.com" class="campo-obrigatorio usuario-login">
-                        <label for="senha">
-                            <small>Senha</small>
-                        </label>
-                        <input type="password" id="senha" name="senha" placeholder="Senha" class="campo-obrigatorio senha-login">
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu e-mail" class="usuario-login">
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" class="senha-login">
                         <div id="lembrar" class="lembrar-senha">
                             <div class="lembrar-acesso">
                                 <input type="checkbox" id="manterConectado" name="manterConectado">
@@ -48,28 +42,46 @@
                         </div>      
                         <input type="submit" value="Login" id="login" class="btn-acesso">          
                     </section>
-                    <section id="formulario-registro" class="formulario-registro">     
+                    <section id="formulario-registro" class="formulario-registro">
+                        <div>
                             <label for="nome">
-                                <small>Nome Completo</small>
+                                <small>Nome</small>
                             </label>
-                            <input type="text" id="email" name="nome" placeholder="Guilherme Souza dos Santos" class="campo-obrigatorio usuario-login">
+                            <input type="text" id="nome" name="nome" placeholder="Nome completo" class="usuario-login required" oninput="validaNome()">
+                            <span class="span-required">
+                                <small>Nome deve conter mais de 3 caracteres</small>
+                            </span>
+                        </div>
+                        <div>
                             <label for="email">
-                                <small>E-mail</small>
+                                <small>Email</small>
                             </label>
-                            <input type="email" id="confirmarEmail" name="email" placeholder="@exemplo.com" class="campo-obrigatorio senha-login">
-                            <label for="email">
-                                <small>Confirmar E-mail</small>
-                            </label>
-                            <input type="email" id="senha" name="email" placeholder="@exemplo.com" class="campo-obrigatorio senha-login">
-                            <label for="Senha">
+                            <input type="email" id="confirmarEmail" name="email" placeholder="Digite seu e-mail" class="senha-login required" oninput="validaEmail()">
+                            <span class="span-required">
+                                <small>Digite um e-mail válido</small>
+                            </span>
+                        </div>
+                        <div>
+                            <label for="senha">
                                 <small>Senha</small>
                             </label>
-                            <input type="password" id="senha" name="Senha" placeholder="Digite uma senha forte" class="campo-obrigatorio senha-login">
-                            <label for="Senha">
-                                <small>Confirmar Senha</small>
+                            <input type="password" id="senha" name="senha" placeholder="Digite uma senha forte" class="senha-login required" oninput="validaSenha()">
+                            <span class="span-required">
+                                <small>A senha deve ter no minino 8 caracteres</small>
+                            </span>
+                        </div>
+                        <div>
+                            <label for="senha">
+                                <small>Confirme a senha</small>
                             </label>
-                            <input type="password" id="senha" name="Senha" placeholder="Repita a senha" class="campo-obrigatorio senha-login">
+                            <input type="password" id="senha" name="senha" placeholder="Confirme sua senha" class="senha-login required" oninput="validaComparacaoSenha()">
+                            <span class="span-required">
+                                <small>As senhas devem ser compativeis</small>
+                            </span>
+                        </div>
+                        <div>
                             <input type="submit" value="Cadastre-se" id="login" class="btn-cadastro"> 
+                        </div>
                     </section>
                 </div>
             </form>
