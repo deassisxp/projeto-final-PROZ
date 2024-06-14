@@ -77,4 +77,3 @@ function validaComparacaoSenha(){
         setError(3);
     }
 }
-
